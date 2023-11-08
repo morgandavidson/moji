@@ -1,1 +1,2 @@
 * Documentation
+Ici nous documenterons le projet. Ce fichier est au format =org=. [https://orgmode.org/][Org-Mode] est un mode de [https://www.gnu.org/software/emacs/][GNU Emacs].
