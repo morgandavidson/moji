@@ -1,2 +1,14 @@
 * Documentation
-Ici nous documenterons le projet dans un fichier au format =org=. [[https://orgmode.org/][Org-Mode]] est un mode de [[https://www.gnu.org/software/emacs/][GNU Emacs]].
+** Solution stack
+|--------------------------+---+----------------+----------------------|
+|                          | L | PoC Stage      | Mature Stage         |
+|--------------------------+---+----------------+----------------------|
+| Data extraction          | B | TBD            | TBD                  |
+| Data preparation         | B | Python Pandas  | Python Pandas        |
+| Data storing file format | B | csv            | TBD                  |
+| Data visualization       | F | Plotly JS cdn  | Other JS library cnd |
+| Web framework            | F | Hugo           | Hugo                 |
+| Web host                 | F | github         | Private web server   |
+| Domain name              | F | NAME.github.io | NAME.EXT             |
+|--------------------------+---+----------------+----------------------|
+L: Layer; B: Backend; F: Frontend.
