@@ -1,14 +1,58 @@
-* Documentation
-** Solution stack
-|--------------------------+---+----------------+----------------------|
-|                          | L | PoC Stage      | Mature Stage         |
-|--------------------------+---+----------------+----------------------|
-| Data extraction          | B | TBD            | TBD                  |
-| Data preparation         | B | Python Pandas  | Python Pandas        |
-| Data storing file format | B | csv            | TBD                  |
-| Data visualization       | F | Plotly JS cdn  | Other JS library cnd |
-| Web framework            | F | Hugo           | Hugo                 |
-| Web host                 | F | github         | Private web server   |
-| Domain name              | F | NAME.github.io | NAME.EXT             |
-|--------------------------+---+----------------+----------------------|
-L: Layer; B: Backend; F: Frontend.
+# Created 2023-12-07 jeu. 15:20
+#+title: README
+#+date: [2023-11-27 lun. 11:49]
+#+author: Morgan DAVIDSON
+#+filetags: :doc:github:moji:
+#+identifier: 20231127T114923
+#+export_file_name: ~/Git/moji/README.org
+
+Welcome to Moji's *Electronic Document Management System* (*EDMS*).
+
+Moji EDMS (MEDMS) is currently located on a GitHub repository called  =moji= and composed of [[https://orgmode.org/][org files]] . Each of MEDMS org file aims to document a tool, a process, a model, a policy, a rule, or a standard.
+
+* How to add files to MEDMS
+** Terminology
+|--------------------+--------------+---------------------------------------------------|
+|                    | AKA          | Description                                       |
+|--------------------+--------------+---------------------------------------------------|
+| This ~project~     |              | Everything stored in ~moji~ directory             |
+| ~repo~             | ~repository~ | Keeps track of the files in the ~project~         |
+| ~central~ (~repo~) |              | =https://github.com/morgandavidson/moji=          |
+| ~origin~ (~repo~)  |              | The GitHub repo you forked from central ~central~ |
+| ~remote~ (~repo~)  | ~upstream~   | A repo on GitHub                                  |
+| ~local~ (~repo~)   | ~downstream~ | A git repo on you local machine                   |
+|--------------------+--------------+---------------------------------------------------|
+
+** Instructions
+1. Steps to *do only once*
+   1. Fork =central= with your GitHub account
+   2. Clone =origin= to =local= with the [[https://git-scm.com/docs/git-clone][git clone]] command
+2. After =A.= has been done. *Each time you want to add/update a file do*:
+   1. [[https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork][Sync fork]] (=central= > =origin=)
+   2. =$ git pull= (=origin= > =local=)
+      [[https://git-scm.com/docs/git-pull][git pull documentation]]
+   3. =$ git-add FILE= (=local=)
+      [[https://git-scm.com/docs/git-add][git add documentation]]
+   4. =$ git commit FILE= (=local=)
+      [[https://git-scm.com/docs/git-commit][git commit documentation]]
+   5. =$ git push= (=local= > =origin=)
+      [[https://git-scm.com/docs/git-push][git push documentation]]
+   6. [[https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork][Create a pull request from fork]]
+
+* MEDMS org files Location
+#+begin_example
+  ├── Architecture
+  │   └── solution_stack.org
+  └── README.org
+#+end_example
+* MEDMS org files description & status
+|----------------------+---------------------------------------+-------------------|
+| File name            | Description                           | Status            |
+|----------------------+---------------------------------------+-------------------|
+| ~README.org~         | Introduction to DEDMS                 | DONE (up to date) |
+| ~solution_stack.org~ | List of the components that we'll use | DONE (up to date) |
+|----------------------+---------------------------------------+-------------------|
+
+* Links to MEDMS pages
+- Architecture
+  - [[https://github.com/morgandavidson/moji/blob/main/Architecture/solution_stack.org][Solution stack]]
