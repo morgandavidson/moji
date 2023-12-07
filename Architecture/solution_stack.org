@@ -1,0 +1,19 @@
+# Created 2023-12-07 jeu. 15:13
+#+title: Solution stack
+#+date: [2023-12-07 jeu. 15:09]
+#+author: Morgan DAVIDSON
+#+filetags: :doc:github:moji:
+#+identifier: 20231207T15091
+#+export_file_name: ~/Git/moji/Architecture/solution_stack.org
+|--------------------------+---+----------------+----------------------|
+|                          | L | PoC Stage      | Mature Stage         |
+|--------------------------+---+----------------+----------------------|
+| Data extraction          | B | TBD            | TBD                  |
+| Data preparation         | B | Python Pandas  | Python Pandas        |
+| Data storing file format | B | csv            | TBD                  |
+| Data visualization       | F | Plotly JS cdn  | Other JS library cnd |
+| Web framework            | F | Hugo           | Hugo                 |
+| Web host                 | F | github         | Private web server   |
+| Domain name              | F | NAME.github.io | NAME.EXT             |
+|--------------------------+---+----------------+----------------------|
+L: Layer; B: Backend; F: Frontend.
