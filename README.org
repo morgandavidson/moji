@@ -1,0 +1,31 @@
+# Created 2023-12-13 mer. 19:32
+#+title: Moji Repo
+#+date: [2023-12-13 mer. 19:09]
+#+author: Morgan DAVIDSON
+#+filetags: :doc:github:moji:
+#+identifier: 20231213T190910
+#+export_file_name: ~/Git/moji/README.org
+
+Welcome to Moji's repo
+* Folder structure
+#+begin_example
+  ├── Documentation
+  │   └── Architecture
+  ├── Projects
+  │   ├── Data_sources
+  │   └── DV1
+  └── Web
+#+end_example
+* Foder description
+|---------------+------------------------------------------|
+| Folder name   | Description                              |
+|---------------+------------------------------------------|
+| Architecture  | How components work together             |
+| Data_sources  | Unmunged data that we collected          |
+| Documentation | Where our documentation is located       |
+| DVn           | Datavisuation project n                  |
+| Projects      | Where all our projects are located       |
+| Web           | All the files that make our website work |
+|---------------+------------------------------------------|
+* Useful links
+- [[https://github.com/morgandavidson/moji/blob/main/Documentation/README.org][MEDMS Documentation]]
