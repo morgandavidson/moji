@@ -1,10 +1,10 @@
-# Created 2023-12-07 jeu. 15:24
+# Created 2023-12-13 mer. 19:38
 #+title: MEDMS Documentation
 #+date: [2023-11-27 lun. 11:49]
 #+author: Morgan DAVIDSON
 #+filetags: :doc:github:moji:
 #+identifier: 20231127T114923
-#+export_file_name: ~/Git/moji/README.org
+#+export_file_name: ~/Git/moji/Documentation/README.org
 
 Welcome to Moji's *Electronic Document Management System* (*EDMS*).
 
@@ -55,4 +55,4 @@ Moji EDMS (MEDMS) is currently located on a GitHub repository called  =moji= and
 
 * Links to MEDMS pages
 - Architecture
-  - [[https://github.com/morgandavidson/moji/blob/main/Architecture/solution_stack.org][Solution stack]]
+  - [[https://github.com/morgandavidson/moji/blob/main/Documentation/Architecture/solution_stack.org][Solution stack]]
