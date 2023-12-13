@@ -1,4 +1,4 @@
-# Created 2023-12-13 mer. 19:32
+# Created 2023-12-13 mer. 20:03
 #+title: Moji Repo
 #+date: [2023-12-13 mer. 19:09]
 #+author: Morgan DAVIDSON
@@ -13,7 +13,10 @@ Welcome to Moji's repo
   │   └── Architecture
   ├── Projects
   │   ├── Data_sources
-  │   └── DV1
+  │   └── DVP1
+  │       ├── DPS
+  │       ├── DVC
+  │       └── DVID
   └── Web
 #+end_example
 * Foder description
@@ -23,7 +26,10 @@ Welcome to Moji's repo
 | Architecture  | How components work together             |
 | Data_sources  | Unmunged data that we collected          |
 | Documentation | Where our documentation is located       |
-| DVn           | Datavisuation project n                  |
+| DPS           | Data preparation scripts                 |
+| DVC           | Data visualization code                  |
+| DVID          | Data visualization input data            |
+| DVPn          | Data visualization project n             |
 | Projects      | Where all our projects are located       |
 | Web           | All the files that make our website work |
 |---------------+------------------------------------------|
