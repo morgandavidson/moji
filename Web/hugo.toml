@@ -1,0 +1,233 @@
+theme = "hello-4s3ti"
+showAuthorInfo = false    # true shows author info below the article
+defaultMarkdownHandler = "org"
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+IsMultiLingual = false
+defaultContentLanguage = "en"
+[author]
+  name = "Polygraph"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+  
+  # Metadata mostly used in document's head
+  # 
+  description = "Nice theme for homepages and blogs"
+  keywords = ""
+  images = [""]
+
+  # Set a background for the homepage
+  # backgroundImage = "assets/images/background.jpg"
+  
+  # Adds a dark overlay over the background
+  # backgroundEffects = false
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
+  disableReadOtherPosts = false
+  
+  # Sets the default theme
+  defaultTheme = "dark"
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = true
+
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
+  enableSharingButtons = true
+
+  # Global language menu
+  #
+  # Enables the global language menu.
+  #
+  enableGlobalLanguageMenu = true
+
+  # Shows Posts on the front/Home page
+  showPosts = true
+
+  # Shows the ReadMore button in text instead
+  ReadmoreText = true
+
+  # Hides ReadMore
+  hideReadMore = false
+
+  # Shows reding time
+  ShowReadingTime = true
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  #
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  #
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+
+[params.fontAwesome]
+  KitURL = "https://kit.fontawesome.com/07fd57a6fa.js"
+
+[params.footer]
+  trademark = true
+  rss = true
+  copyright = true
+  author = true
+
+  # Shows social icons on footer instead of main page
+  socialIcons = true
+
+  topText = []
+  bottomText = [
+    "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+    "Hello 4s3ti theme by <a href=\"https://github.com/4s3ti\">4s3ti</a>"
+  ]
+
+# Colors for favicons	  
+[params.favicon.color]
+  mask = "#1b1c1d"
+  msapplication = "#1b1c1d"
+  theme = "#1b1c1d"
+
+[params.logo]
+  logoMark     = ">"
+  logoText     = "Polygraph"
+  logoHomeLink = "/"
+  # Set true to remove the logo cursor entirely.
+  # logoCursorDisabled = false
+  # Set to a valid CSS color to change the cursor in the logo.
+  # logoCursorColor    = "#67a2c9"
+  # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+  # logoCursorAnimate  = "2s"
+
+# Commento is more than just a comments widget you can embed — 
+# it’s a return to the roots of the internet. 
+# An internet without the tracking and invasions of privacy. 
+# An internet that is simple and lightweight. 
+# An internet that is focused on interesting discussions, not ads. 
+# A better internet.
+# Uncomment this to enable Commento.
+#
+# [params.commento]
+#   url = ""
+
+# Uncomment this if you want a portrait on your start page
+#
+# [params.portrait]
+#   path     = "/img/image.jpg"
+#   alt      = "Portrait"
+#   maxWidth = "50px"
+
+# Social icons
+[[params.social]]
+  name = "x-twitter"
+  url  = "https://x.com/"
+
+[[params.social]]
+  name = "email"
+  url  = "mailto:nobody@example.com"
+  icon = "fa-solid fa-envelope"
+
+[[params.social]]
+  name = "github"
+  url  = "https://github.com/"
+
+[[params.social]]
+  name = "linkedin"
+  url  = "https://www.linkedin.com/"
+
+# multilingual support# | other translations present in i18n/
+  enableGlobalLanguageMenu = true
+#  showMenuLanguageChooser = true			   
+  [languages]
+
+[languages.en]
+  languageCode = "en"
+  homeTitle = "Welcome to Polygraph"   # Home page title
+  # Home subtitle of the index page:
+  homeSubtitle = 'A good sketch is better than a long speech - Napoléon Bonaparte'
+  languageName = 'English'
+  weight = 1
+  [languages.en.params]
+    description = "Datavisualisations reltated with political issues"
+    #mydomain = "tekki-tipps.de/en/"
+    [[languages.en.menu.main]]
+      identifier = "about"	  
+      name = "About"
+      weight = 1
+    [[languages.en.menu.main]]
+      identifier = "approach"	  
+      parent = "about"
+      name = "Our approach"
+      weight = 1
+      pageref = "/about/approach"    
+    [[languages.en.menu.main]]
+      identifier = "team"	  
+      parent = "about"
+      name = "Our team"
+      weight = 1
+      pageref = "/about/team"
+
+[languages.fr]
+  languageCode = "fr"
+  homeTitle = "Bienvenu sur Polygraph"   # Home page title
+  # Home subtitle of the index page:
+  homeSubtitle = "Un bon croquis vaut mieux qu'un long discours - Napoléon Bonaparte"
+  languageName = 'Français'
+  weight = 2
+  [languages.fr.params]
+    description = "Visualisation de données à caractère politique"
+    #mydomain = "tekki-tipps.de/en/ 🇬🇧"
+    [[languages.fr.menu.main]]
+      identifier = "about"	  
+      name = "À propos"
+      weight = 1
+    [[languages.fr.menu.main]]
+      identifier = "approach"	  
+      parent = "about"
+      name = "Notre approche"
+      weight = 1
+      pageref = "/about/approach.fr"    
+    [[languages.fr.menu.main]]
+      identifier = "team"	  
+      parent = "about"
+      name = "Notre équipe"
+      weight = 1
+      pageref = "/about/team.fr"
