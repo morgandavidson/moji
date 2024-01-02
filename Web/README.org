@@ -7,10 +7,10 @@
 #+export_file_name: ~/Git/moji/Web/README.org
 
 * Run the website
-To run the website, do the follwoing command from the =moji/Web=:
+To run the website, do the following command from =moji/Web= directory:
 #+begin_src sh
   hugo server
 #+end_src
-Note that need to have hugo installed to run it. For more information, [[https://gohugo.io/installation/][see this page]].
+Note that you'll need to have hugo installed to be able to run it. For more information. See [[https://gohugo.io/installation/][this page]] for installation instructions.
 * Edit content
-To edit the content of the website, just edit the org files that are in the =moji/Web/content=
+To edit the content of the website, just edit the org files that are in the =moji/Web/content= directory.
