@@ -1,0 +1,16 @@
+#+options: timestamp:nil
+#+title: Hugo Documentation
+#+date: [2024-01-02 mar. 23:38]
+#+author: Morgan DAVIDSON
+#+filetags: :doc:github:moji:venture:
+#+identifier: 20240102T233832
+#+export_file_name: ~/Git/moji/Web/README.org
+
+* Run the website
+To run the website, do the follwoing command from the =moji/Web=:
+#+begin_src sh
+  hugo server
+#+end_src
+Note that need to have hugo installed to run it. For more information, [[https://gohugo.io/installation/][see this page]].
+* Edit content
+To edit the content of the website, just edit the org files that are in the =moji/Web/content=

@@ -1,4 +1,4 @@
-# Created 2023-12-13 mer. 19:38
+#+options: timestamp:nil
 #+title: MEDMS Documentation
 #+date: [2023-11-27 lun. 11:49]
 #+author: Morgan DAVIDSON
