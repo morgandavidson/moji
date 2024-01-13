@@ -1,4 +1,4 @@
-theme = ["hugo-chart", "hello-4s3ti"]
+theme = "hello-4s3ti"
 showAuthorInfo = false    # true shows author info below the article
 defaultMarkdownHandler = "org"
 archetypeDir = "archetypes"
@@ -22,6 +22,8 @@ disable404     = false
 disableHugoGeneratorInject = false
 IsMultiLingual = false
 defaultContentLanguage = "en"
+[author]
+  name = "Poligraph"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -99,9 +101,6 @@ defaultContentLanguage = "en"
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
   #
-
-[params.author]
-  name = "Poligraph"
 
 [params.fontAwesome]
   KitURL = "https://kit.fontawesome.com/07fd57a6fa.js"
@@ -181,14 +180,14 @@ defaultContentLanguage = "en"
 
 [languages.en]
   languageCode = "en"
-  languageName = 'English'   
+  homeTitle = "Welcome to Poligraph"   # Home page title
+  # Home subtitle of the index page:
+  homeSubtitle = 'A good sketch is better than a long speech - Napoléon Bonaparte'
+  languageName = 'English'
   weight = 1
   [languages.en.params]
     description = "Datavisualisations reltated with political issues"
     #mydomain = "tekki-tipps.de/en/"
-    # Home subtitle of the index page:
-    homeSubtitle = 'A good sketch is better than a long speech - Napoléon Bonaparte'
-    homeTitle = "Welcome to Poligraph"   # Home page title  
     [[languages.en.menu.main]]
       identifier = "about"	  
       name = "About"
@@ -208,15 +207,14 @@ defaultContentLanguage = "en"
 
 [languages.fr]
   languageCode = "fr"
+  homeTitle = "Bienvenu sur Poligraph"   # Home page title
+  # Home subtitle of the index page:
+  homeSubtitle = "Un bon croquis vaut mieux qu'un long discours - Napoléon Bonaparte"
   languageName = 'Français'
   weight = 2
   [languages.fr.params]
     description = "Visualisation de données à caractère politique"
     #mydomain = "tekki-tipps.de/en/ 🇬🇧"
-    # Home subtitle of the index page:
-    homeTitle = "Bienvenu sur Poligraph"   # Home page title
-    homeSubtitle = "Un bon croquis vaut mieux qu'un long discours - Napoléon Bonaparte"
-
     [[languages.fr.menu.main]]
       identifier = "about"	  
       name = "À propos"
