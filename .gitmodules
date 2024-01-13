@@ -1,0 +1,6 @@
+[submodule "Web/themes/DoIt"]
+	path = Web/themes/DoIt
+	url = https://github.com/HEIGE-PCloud/DoIt.git
+[submodule "Web/themes/hugo-chart"]
+	path = Web/themes/hugo-chart
+	url = https://github.com/Shen-Yu/hugo-chart.git
