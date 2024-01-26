@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 jupyterlab = "*"
+pandas = "*"
+openpyxl = "*"
+pyarrow = "*"
+treelib = "*"
+anytree = "*"
 
 [dev-packages]
 
