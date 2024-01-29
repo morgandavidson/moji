@@ -1,4 +1,4 @@
-theme = ["hugo-chart", "hello-4s3ti"]
+theme = "hello-4s3ti"
 showAuthorInfo = false    # true shows author info below the article
 defaultMarkdownHandler = "org"
 archetypeDir = "archetypes"
@@ -188,11 +188,29 @@ defaultContentLanguage = "en"
     #mydomain = "tekki-tipps.de/en/"
     # Home subtitle of the index page:
     homeSubtitle = 'A good sketch is better than a long speech - Napoléon Bonaparte'
-    homeTitle = "Welcome to Poligraph"   # Home page title  
+    homeTitle = "Welcome to Poligraph"   # Home page title
+    [[languages.en.menu.main]]
+      identifier = "demography"	  
+      name = "Demography"
+      weight = 1
+    [[languages.en.menu.main]]
+      identifier = "worldpop"	  
+      parent = "demography"
+      name = "World Population"
+      weight = 2
+      pageref = "/demography/worldpopulation"    
+    [[languages.en.menu.main]]
+      identifier = "economy"	  
+      name = "Economy"
+      weight = 3
+    [[languages.en.menu.main]]
+      identifier = "Politics"	  
+      name = "Politics"
+      weight = 4
     [[languages.en.menu.main]]
       identifier = "about"	  
       name = "About"
-      weight = 1
+      weight = 5
     [[languages.en.menu.main]]
       identifier = "approach"	  
       parent = "about"
@@ -216,11 +234,28 @@ defaultContentLanguage = "en"
     # Home subtitle of the index page:
     homeTitle = "Bienvenu sur Poligraph"   # Home page title
     homeSubtitle = "Un bon croquis vaut mieux qu'un long discours - Napoléon Bonaparte"
-
+    [[languages.fr.menu.main]]
+      identifier = "demography"	  
+      name = "Démographie"
+      weight = 1
+    [[languages.fr.menu.main]]
+      identifier = "worldpop"	  
+      parent = "demography"
+      name = "Population Mondiale"
+      weight = 1
+      pageref = "/demography/worldpopulation"    
+    [[languages.fr.menu.main]]
+      identifier = "economy"	  
+      name = "Économie"
+      weight = 2
+    [[languages.fr.menu.main]]
+      identifier = "Politics"	  
+      name = "Politique"
+      weight = 3
     [[languages.fr.menu.main]]
       identifier = "about"	  
       name = "À propos"
-      weight = 1
+      weight = 4
     [[languages.fr.menu.main]]
       identifier = "approach"	  
       parent = "about"
