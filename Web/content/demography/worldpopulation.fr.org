@@ -5,7 +5,7 @@
 #+options: timestamp:nil
 #+EXPORT_FILE_NAME: ~/Git/moji/Web/content/demography/worldpopulation.fr.org
 
-L'ensemble des données et catégories utilisées dans cette page sont issues du [[https://population.un.org/wpp/][site de l'ONU]]
+L'ensemble des données et catégories utilisées dans cette page sont issues du [[https://population.un.org/wpp/][site de l'ONU]].
 * Population mondiale par continent 1950-2021
 #+begin_export html
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
@@ -45,7 +45,7 @@ chart.setOption({
 * Population mondiale par continent 1950-2100
 #+begin_export html
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
-<div id="un-region-pop-pf" style="width:1200px;height:600px;"></div>
+<div id="un-region-pop-pf" style="width:1000px;height:600px;"></div>
 <script>
 var container = document.getElementById('un-region-pop-pf');
 var chart = echarts.init(container);
@@ -78,271 +78,75 @@ chart.setOption({
 });
 </script>
 #+end_export
-* Régions et pays inclus dans chaque continent
-#+begin_src sh
-WORLD
-├── AFRICA
-│	├── Eastern Africa
-│	│   ├── Burundi
-│	│   ├── Comoros
-│	│   ├── Djibouti
-│	│   ├── Eritrea
-│	│   ├── Ethiopia
-│	│   ├── Kenya
-│	│   ├── Madagascar
-│	│   ├── Malawi
-│	│   ├── Mauritius
-│	│   ├── Mayotte
-│	│   ├── Mozambique
-│	│   ├── Réunion
-│	│   ├── Rwanda
-│	│   ├── Seychelles
-│	│   ├── Somalia
-│	│   ├── South Sudan
-│	│   ├── Uganda
-│	│   ├── United Republic of Tanzania
-│	│   ├── Zambia
-│	│   └── Zimbabwe
-│	├── Middle Africa
-│	│   ├── Angola
-│	│   ├── Cameroon
-│	│   ├── Central African Republic
-│	│   ├── Chad
-│	│   ├── Congo
-│	│   ├── Democratic Republic of the Congo
-│	│   ├── Equatorial Guinea
-│	│   ├── Gabon
-│	│   └── Sao Tome and Principe
-│	├── Northern Africa
-│	│   ├── Algeria
-│	│   ├── Egypt
-│	│   ├── Libya
-│	│   ├── Morocco
-│	│   ├── Sudan
-│	│   ├── Tunisia
-│	│   └── Western Sahara
-│	├── Southern Africa
-│	│   ├── Botswana
-│	│   ├── Eswatini
-│	│   ├── Lesotho
-│	│   ├── Namibia
-│	│   └── South Africa
-│	└── Western Africa
-│	    ├── Benin
-│	    ├── Burkina Faso
-│	    ├── Cabo Verde
-│	    ├── Côte d'Ivoire
-│	    ├── Gambia
-│	    ├── Ghana
-│	    ├── Guinea
-│	    ├── Guinea-Bissau
-│	    ├── Liberia
-│	    ├── Mali
-│	    ├── Mauritania
-│	    ├── Niger
-│	    ├── Nigeria
-│	    ├── Saint Helena
-│	    ├── Senegal
-│	    ├── Sierra Leone
-│	    └── Togo
-├── ASIA
-│	├── Central Asia
-│	│   ├── Kazakhstan
-│	│   ├── Kyrgyzstan
-│	│   ├── Tajikistan
-│	│   ├── Turkmenistan
-│	│   └── Uzbekistan
-│	├── Eastern Asia
-│	│   ├── China
-│	│   ├── China, Hong Kong SAR
-│	│   ├── China, Macao SAR
-│	│   ├── China, Taiwan Province of China
-│	│   ├── Dem. People's Republic of Korea
-│	│   ├── Japan
-│	│   ├── Mongolia
-│	│   └── Republic of Korea
-│	├── Southern Asia
-│	│   ├── Afghanistan
-│	│   ├── Bangladesh
-│	│   ├── Bhutan
-│	│   ├── India
-│	│   ├── Iran (Islamic Republic of)
-│	│   ├── Maldives
-│	│   ├── Nepal
-│	│   ├── Pakistan
-│	│   └── Sri Lanka
-│	├── South-Eastern Asia
-│	│   ├── Brunei Darussalam
-│	│   ├── Cambodia
-│	│   ├── Indonesia
-│	│   ├── Lao People's Democratic Republic
-│	│   ├── Malaysia
-│	│   ├── Myanmar
-│	│   ├── Philippines
-│	│   ├── Singapore
-│	│   ├── Thailand
-│	│   ├── Timor-Leste
-│	│   └── Viet Nam
-│	└── Western Asia
-│	    ├── Armenia
-│	    ├── Azerbaijan
-│	    ├── Bahrain
-│	    ├── Cyprus
-│	    ├── Georgia
-│	    ├── Iraq
-│	    ├── Israel
-│	    ├── Jordan
-│	    ├── Kuwait
-│	    ├── Lebanon
-│	    ├── Oman
-│	    ├── Qatar
-│	    ├── Saudi Arabia
-│	    ├── State of Palestine
-│	    ├── Syrian Arab Republic
-│	    ├── Türkiye
-│	    ├── United Arab Emirates
-│	    └── Yemen
-├── EUROPE
-│	├── Eastern Europe
-│	│   ├── Belarus
-│	│   ├── Bulgaria
-│	│   ├── Czechia
-│	│   ├── Hungary
-│	│   ├── Poland
-│	│   ├── Republic of Moldova
-│	│   ├── Romania
-│	│   ├── Russian Federation
-│	│   ├── Slovakia
-│	│   └── Ukraine
-│	├── Northern Europe
-│	│   ├── Denmark
-│	│   ├── Estonia
-│	│   ├── Faroe Islands
-│	│   ├── Finland
-│	│   ├── Guernsey
-│	│   ├── Iceland
-│	│   ├── Ireland
-│	│   ├── Isle of Man
-│	│   ├── Jersey
-│	│   ├── Latvia
-│	│   ├── Lithuania
-│	│   ├── Norway
-│	│   ├── Sweden
-│	│   └── United Kingdom
-│	├── Southern Europe
-│	│   ├── Albania
-│	│   ├── Andorra
-│	│   ├── Bosnia and Herzegovina
-│	│   ├── Croatia
-│	│   ├── Gibraltar
-│	│   ├── Greece
-│	│   ├── Holy See
-│	│   ├── Italy
-│	│   ├── Kosovo (under UNSC res. 1244)
-│	│   ├── Malta
-│	│   ├── Montenegro
-│	│   ├── North Macedonia
-│	│   ├── Portugal
-│	│   ├── San Marino
-│	│   ├── Serbia
-│	│   ├── Slovenia
-│	│   └── Spain
-│	└── Western Europe
-│	    ├── Austria
-│	    ├── Belgium
-│	    ├── France
-│	    ├── Germany
-│	    ├── Liechtenstein
-│	    ├── Luxembourg
-│	    ├── Monaco
-│	    ├── Netherlands
-│	    └── Switzerland
-├── LATIN AMERICA AND THE CARIBBEAN
-│	├── Caribbean
-│	│   ├── Anguilla
-│	│   ├── Antigua and Barbuda
-│	│   ├── Aruba
-│	│   ├── Bahamas
-│	│   ├── Barbados
-│	│   ├── Bonaire, Sint Eustatius and Saba
-│	│   ├── British Virgin Islands
-│	│   ├── Cayman Islands
-│	│   ├── Cuba
-│	│   ├── Curaçao
-│	│   ├── Dominica
-│	│   ├── Dominican Republic
-│	│   ├── Grenada
-│	│   ├── Guadeloupe
-│	│   ├── Haiti
-│	│   ├── Jamaica
-│	│   ├── Martinique
-│	│   ├── Montserrat
-│	│   ├── Puerto Rico
-│	│   ├── Saint Barthélemy
-│	│   ├── Saint Kitts and Nevis
-│	│   ├── Saint Lucia
-│	│   ├── Saint Martin (French part)
-│	│   ├── Saint Vincent and the Grenadines
-│	│   ├── Sint Maarten (Dutch part)
-│	│   ├── Trinidad and Tobago
-│	│   ├── Turks and Caicos Islands
-│	│   └── United States Virgin Islands
-│	├── Central America
-│	│   ├── Belize
-│	│   ├── Costa Rica
-│	│   ├── El Salvador
-│	│   ├── Guatemala
-│	│   ├── Honduras
-│	│   ├── Mexico
-│	│   ├── Nicaragua
-│	│   └── Panama
-│	└── South America
-│	    ├── Argentina
-│	    ├── Bolivia (Plurinational State of)
-│	    ├── Brazil
-│	    ├── Chile
-│	    ├── Colombia
-│	    ├── Ecuador
-│	    ├── Falkland Islands (Malvinas)
-│	    ├── French Guiana
-│	    ├── Guyana
-│	    ├── Paraguay
-│	    ├── Peru
-│	    ├── Suriname
-│	    ├── Uruguay
-│	    └── Venezuela (Bolivarian Republic of)
-├── NORTHERN AMERICA
-│	├── Bermuda
-│	├── Canada
-│	├── Greenland
-│	├── Saint Pierre and Miquelon
-│	└── United States of America
-└── OCEANIA
-├── Australia/New Zealand
-│   ├── Australia
-│   └── New Zealand
-├── Melanesia
-│   ├── Fiji
-│   ├── New Caledonia
-│   ├── Papua New Guinea
-│   ├── Solomon Islands
-│   └── Vanuatu
-├── Micronesia
-│   ├── Guam
-│   ├── Kiribati
-│   ├── Marshall Islands
-│   ├── Micronesia (Fed. States of)
-│   ├── Nauru
-│   ├── Northern Mariana Islands
-│   └── Palau
-└── Polynesia
-    ├── American Samoa
-    ├── Cook Islands
-    ├── French Polynesia
-    ├── Niue
-    ├── Samoa
-    ├── Tokelau
-    ├── Tonga
-    ├── Tuvalu
-    └── Wallis and Futuna Islands
-#+end_src
+* Population par continents, regions, pays (2021)
+# Lengend manual input
+#+begin_export html
+<div style="width:800px">
+<center><font color="#91cc75"> <b>ASIE</b> </font> - <font color="#fac858"> <b>AFRIQUE</b> </font> - <font color="#ee6666"> <b>EUROPE</b> </font> - <font color="#73c0de"><b>AMÉRIQUE LATINE</b> </font> - <font color="#3ba272"> <b>AMERIQUE DU NORD</b> </font> - <font color="#fdad8b"> <b>OCEANIE</b> </font></center>
+</div>
+#+end_export
+# Preamble (only change id)
+#+begin_export html
+<div id="un-geo-cat" style="width:800px;height:800px;"></div>
+<script>
+var dom = document.getElementById('un-geo-cat');
+var myChart = echarts.init(dom, null, {
+  renderer: 'canvas',
+  useDirtyRect: false
+});
+var app = {};
+
+var option;
+</script>
+#+end_export
+# Echart Data
+#+begin_export html
+<script>
+var data =
+[{"name": "AFRICA", "value": 1377285000, "children": [{"name": "Eastern Africa", "value": 455227934.0, "children": [{"name": "Burundi", "value": 12386556.0}, {"name": "Comoros", "value": 814006.0}, {"name": "Djibouti", "value": 1097968.0}, {"name": "Eritrea", "value": 3588083.0}, {"name": "Ethiopia", "value": 118743462.0}, {"name": "Kenya", "value": 52511349.0}, {"name": "Madagascar", "value": 28571222.0}, {"name": "Malawi", "value": 19633241.0}, {"name": "Mauritius", "value": 1298695.0}, {"name": "Mayotte", "value": 310823.0}, {"name": "Mozambique", "value": 31635726.0}, {"name": "R\u00e9union", "value": 962127.0}, {"name": "Rwanda", "value": 13305392.0}, {"name": "Seychelles", "value": 106054.0}, {"name": "Somalia", "value": 16801170.0}, {"name": "South Sudan", "value": 10667013.0}, {"name": "Uganda", "value": 45123359.0}, {"name": "United Republic of Tanzania", "value": 62637070.0}, {"name": "Zambia", "value": 19200512.0}, {"name": "Zimbabwe", "value": 15834106.0}]}, {"name": "Middle Africa", "value": 187422625.0, "children": [{"name": "Angola", "value": 33957975.0}, {"name": "Cameroon", "value": 26845044.0}, {"name": "Central African Republic", "value": 5414014.0}, {"name": "Chad", "value": 16910218.0}, {"name": "Congo", "value": 5769060.0}, {"name": "Democratic Republic of the Congo", "value": 94374379.0}, {"name": "Equatorial Guinea", "value": 1613724.0}, {"name": "Gabon", "value": 2317151.0}, {"name": "Sao Tome and Principe", "value": 221060.0}]}, {"name": "Northern Africa", "value": 253619400.0, "children": [{"name": "Algeria", "value": 43812345.0}, {"name": "Egypt", "value": 108391549.0}, {"name": "Libya", "value": 6695856.0}, {"name": "Morocco", "value": 36888700.0}, {"name": "Sudan", "value": 45052904.0}, {"name": "Tunisia", "value": 12217195.0}, {"name": "Western Sahara", "value": 560851.0}]}, {"name": "Southern Africa", "value": 67673776.0, "children": [{"name": "Botswana", "value": 2569263.0}, {"name": "Eswatini", "value": 1187088.0}, {"name": "Lesotho", "value": 2268596.0}, {"name": "Namibia", "value": 2511119.0}, {"name": "South Africa", "value": 59137710.0}]}, {"name": "Western Africa", "value": 413340896.0, "children": [{"name": "Benin", "value": 12819427.0}, {"name": "Burkina Faso", "value": 21813359.0}, {"name": "Cabo Verde", "value": 585347.0}, {"name": "C\u00f4te d'Ivoire", "value": 27146007.0}, {"name": "Gambia", "value": 2606941.0}, {"name": "Ghana", "value": 32511557.0}, {"name": "Guinea", "value": 13368719.0}, {"name": "Guinea-Bissau", "value": 2038353.0}, {"name": "Liberia", "value": 5140978.0}, {"name": "Mali", "value": 21561299.0}, {"name": "Mauritania", "value": 4556274.0}, {"name": "Niger", "value": 24785587.0}, {"name": "Nigeria", "value": 210874214.0}, {"name": "Saint Helena", "value": 5405.0}, {"name": "Senegal", "value": 16656773.000000002}, {"name": "Sierra Leone", "value": 8327732.0}, {"name": "Togo", "value": 8542924.0}]}]}, {"name": "ASIA", "value": 4680790000, "children": [{"name": "Central Asia", "value": 75324804.0, "children": [{"name": "Kazakhstan", "value": 19097429.0}, {"name": "Kyrgyzstan", "value": 6477418.0}, {"name": "Tajikistan", "value": 9643597.0}, {"name": "Turkmenistan", "value": 6296510.0}, {"name": "Uzbekistan", "value": 33809850.0}]}, {"name": "Eastern Asia", "value": 1663908043.0, "children": [{"name": "China", "value": 1425861543.0}, {"name": "China, Hong Kong SAR", "value": 7500008.0}, {"name": "China, Macao SAR", "value": 682547.0}, {"name": "China, Taiwan Province of China", "value": 23842033.0}, {"name": "Dem. People's Republic of Korea", "value": 25921701.0}, {"name": "Japan", "value": 124946751.0}, {"name": "Mongolia", "value": 3322207.0}, {"name": "Republic of Korea", "value": 51831253.0}]}, {"name": "Southern Asia", "value": 1980450072.0, "children": [{"name": "Afghanistan", "value": 39618434.0}, {"name": "Bangladesh", "value": 168414908.0}, {"name": "Bhutan", "value": 775008.0}, {"name": "India", "value": 1402807867.0}, {"name": "Iran (Islamic Republic of)", "value": 87590223.0}, {"name": "Maldives", "value": 517986.0}, {"name": "Nepal", "value": 29698028.0}, {"name": "Pakistan", "value": 229280621.0}, {"name": "Sri Lanka", "value": 21746997.0}]}, {"name": "South-Eastern Asia", "value": 673205526.0, "children": [{"name": "Brunei Darussalam", "value": 443557.0}, {"name": "Cambodia", "value": 16497440.999999998}, {"name": "Indonesia", "value": 272890093.0}, {"name": "Lao People's Democratic Republic", "value": 7373145.0}, {"name": "Malaysia", "value": 33396348.0}, {"name": "Myanmar", "value": 53618425.0}, {"name": "Philippines", "value": 113094332.0}, {"name": "Singapore", "value": 5926220.0}, {"name": "Thailand", "value": 71561955.0}, {"name": "Timor-Leste", "value": 1310236.0}, {"name": "Viet Nam", "value": 97093774.0}]}, {"name": "Western Asia", "value": 287901728.0, "children": [{"name": "Armenia", "value": 2798721.0}, {"name": "Azerbaijan", "value": 10296374.0}, {"name": "Bahrain", "value": 1460905.0}, {"name": "Cyprus", "value": 1241296.0}, {"name": "Georgia", "value": 3762641.0}, {"name": "Iraq", "value": 43071016.0}, {"name": "Israel", "value": 8829385.0}, {"name": "Jordan", "value": 11040365.0}, {"name": "Kuwait", "value": 4252528.0}, {"name": "Lebanon", "value": 5631325.0}, {"name": "Oman", "value": 4497661.0}, {"name": "Qatar", "value": 2692140.0}, {"name": "Saudi Arabia", "value": 35764241.0}, {"name": "State of Palestine", "value": 5076818.0}, {"name": "Syrian Arab Republic", "value": 21059148.0}, {"name": "T\u00fcrkiye", "value": 84459174.0}, {"name": "United Arab Emirates", "value": 9327028.0}, {"name": "Yemen", "value": 32640962.0}]}]}, {"name": "EUROPE", "value": 745853000, "children": [{"name": "Eastern Europe", "value": 292304799.0, "children": [{"name": "Belarus", "value": 9606437.0}, {"name": "Bulgaria", "value": 6938114.0}, {"name": "Czechia", "value": 10523996.0}, {"name": "Hungary", "value": 9731025.0}, {"name": "Poland", "value": 38378767.0}, {"name": "Republic of Moldova", "value": 3074670.0}, {"name": "Romania", "value": 19394347.0}, {"name": "Russian Federation", "value": 145472994.0}, {"name": "Slovakia", "value": 5455809.0}, {"name": "Ukraine", "value": 43728640.0}]}, {"name": "Northern Europe", "value": 106016495.0, "children": [{"name": "Denmark", "value": 5840504.0}, {"name": "Estonia", "value": 1329802.0}, {"name": "Faroe Islands", "value": 52782.0}, {"name": "Finland", "value": 5533721.0}, {"name": "Guernsey", "value": 62952.0}, {"name": "Iceland", "value": 368998.0}, {"name": "Ireland", "value": 4967164.0}, {"name": "Isle of Man", "value": 84093.0}, {"name": "Jersey", "value": 108964.0}, {"name": "Latvia", "value": 1886860.0}, {"name": "Lithuania", "value": 2804633.0}, {"name": "Norway", "value": 5391723.0}, {"name": "Sweden", "value": 10416525.0}, {"name": "United Kingdom", "value": 67167774.0}]}, {"name": "Southern Europe", "value": 152294640.0, "children": [{"name": "Albania", "value": 2861567.0}, {"name": "Andorra", "value": 78380.0}, {"name": "Bosnia and Herzegovina", "value": 3295841.0}, {"name": "Croatia", "value": 4079100.0}, {"name": "Gibraltar", "value": 32714.0}, {"name": "Greece", "value": 10481118.0}, {"name": "Holy See", "value": 515.0}, {"name": "Italy", "value": 59361259.0}, {"name": "Kosovo (under UNSC res. 1244)", "value": 1666259.0}, {"name": "Malta", "value": 521121.0}, {"name": "Montenegro", "value": 628205.0}, {"name": "North Macedonia", "value": 2108119.0}, {"name": "Portugal", "value": 10297984.0}, {"name": "San Marino", "value": 33822.0}, {"name": "Serbia", "value": 7331946.0}, {"name": "Slovenia", "value": 2119030.0}, {"name": "Spain", "value": 47397660.0}]}, {"name": "Western Europe", "value": 195237321.0, "children": [{"name": "Austria", "value": 8914448.0}, {"name": "Belgium", "value": 11582160.0}, {"name": "France", "value": 64502346.0}, {"name": "Germany", "value": 83390320.0}, {"name": "Liechtenstein", "value": 38883.0}, {"name": "Luxembourg", "value": 634720.0}, {"name": "Monaco", "value": 36811.0}, {"name": "Netherlands", "value": 17466838.0}, {"name": "Switzerland", "value": 8670795.0}]}]}, {"name": "LATIN AMERICA AND THE CARIBBEAN", "value": 654148000, "children": [{"name": "Caribbean", "value": 44092085.0, "children": [{"name": "Anguilla", "value": 15675.0}, {"name": "Antigua and Barbuda", "value": 92951.0}, {"name": "Aruba", "value": 106501.0}, {"name": "Bahamas", "value": 407164.0}, {"name": "Barbados", "value": 280959.0}, {"name": "Bonaire, Sint Eustatius and Saba", "value": 26443.0}, {"name": "British Virgin Islands", "value": 31060.0}, {"name": "Cayman Islands", "value": 67879.0}, {"name": "Cuba", "value": 11292160.0}, {"name": "Cura\u00e7ao", "value": 189973.0}, {"name": "Dominica", "value": 72225.0}, {"name": "Dominican Republic", "value": 11059980.0}, {"name": "Grenada", "value": 124167.0}, {"name": "Guadeloupe", "value": 396185.0}, {"name": "Haiti", "value": 11379095.0}, {"name": "Jamaica", "value": 2826398.0}, {"name": "Martinique", "value": 369831.0}, {"name": "Montserrat", "value": 4445.0}, {"name": "Puerto Rico", "value": 3262911.0}, {"name": "Saint Barth\u00e9lemy", "value": 10768.0}, {"name": "Saint Kitts and Nevis", "value": 47604.0}, {"name": "Saint Lucia", "value": 179551.0}, {"name": "Saint Martin (French part)", "value": 32256.0}, {"name": "Saint Vincent and the Grenadines", "value": 104553.0}, {"name": "Sint Maarten (Dutch part)", "value": 43916.0}, {"name": "Trinidad and Tobago", "value": 1522394.0}, {"name": "Turks and Caicos Islands", "value": 44699.0}, {"name": "United States Virgin Islands", "value": 100342.0}]}, {"name": "Central America", "value": 177050287.0, "children": [{"name": "Belize", "value": 397415.0}, {"name": "Costa Rica", "value": 5140851.0}, {"name": "El Salvador", "value": 6304540.0}, {"name": "Guatemala", "value": 17494265.0}, {"name": "Honduras", "value": 10201736.0}, {"name": "Mexico", "value": 126386142.0}, {"name": "Nicaragua", "value": 6802086.0}, {"name": "Panama", "value": 4323252.0}]}, {"name": "South America", "value": 433005871.0, "children": [{"name": "Argentina", "value": 45163623.0}, {"name": "Bolivia (Plurinational State of)", "value": 12009978.0}, {"name": "Brazil", "value": 213827672.0}, {"name": "Chile", "value": 19393941.0}, {"name": "Colombia", "value": 51244297.0}, {"name": "Ecuador", "value": 17690028.0}, {"name": "Falkland Islands (Malvinas)", "value": 3757.0}, {"name": "French Guiana", "value": 294129.0}, {"name": "Guyana", "value": 802562.0}, {"name": "Paraguay", "value": 6664351.0}, {"name": "Peru", "value": 33519231.0}, {"name": "Suriname", "value": 610325.0}, {"name": "Uruguay", "value": 3429902.0}, {"name": "Venezuela (Bolivarian Republic of)", "value": 28352075.0}]}]}, {"name": "NORTHERN AMERICA", "value": 374641000, "children": [{"name": "Bermuda", "value": 64134.0}, {"name": "Canada", "value": 38019178.0}, {"name": "Greenland", "value": 56119.0}, {"name": "Saint Pierre and Miquelon", "value": 5893.0}, {"name": "United States of America", "value": 336495769.0}]}, {"name": "OCEANIA", "value": 31715000, "children": [{"name": "Australia/New Zealand", "value": 30891693.0, "children": [{"name": "Australia", "value": 25795922.0}, {"name": "New Zealand", "value": 5095771.0}]}, {"name": "Melanesia", "value": 12075284.0, "children": [{"name": "Fiji", "value": 922753.0}, {"name": "New Caledonia", "value": 287187.0}, {"name": "Papua New Guinea", "value": 9850462.0}, {"name": "Solomon Islands", "value": 699484.0}, {"name": "Vanuatu", "value": 315398.0}]}, {"name": "Micronesia", "value": 532881.0, "children": [{"name": "Guam", "value": 169886.0}, {"name": "Kiribati", "value": 127671.0}, {"name": "Marshall Islands", "value": 42746.0}, {"name": "Micronesia (Fed. States of)", "value": 112624.0}, {"name": "Nauru", "value": 12414.0}, {"name": "Northern Mariana Islands", "value": 49543.0}, {"name": "Palau", "value": 17997.0}]}, {"name": "Polynesia", "value": 714734.0, "children": [{"name": "American Samoa", "value": 45624.0}, {"name": "Cook Islands", "value": 17016.0}, {"name": "French Polynesia", "value": 303097.0}, {"name": "Niue", "value": 1943.0}, {"name": "Samoa", "value": 216800.0}, {"name": "Tokelau", "value": 1837.0}, {"name": "Tonga", "value": 105635.0}, {"name": "Tuvalu", "value": 11140.0}, {"name": "Wallis and Futuna Islands", "value": 11642.0}]}]}]
+;
+</script>
+#+end_export
+# Echart Config
+#+begin_export html
+<script>
+option = {
+  tooltip: {
+    trigger: 'item',
+    valueFormatter: value => value.toLocaleString(),
+  },
+//  legend: {
+//    data: ['AFRICA','ASIA'],
+//    orient: 'horizontal',
+//  },  
+  series: {
+//    name: ['AFRICA','ASIA'],
+    type: 'sunburst',
+    emphasis: {
+      focus: 'ancestor'
+    },
+    data: data,
+    radius: [0, '90%'],
+    label: {
+      rotate: 'radial'
+    },
+    itemStyle : {
+      normal : {
+        label : {show : false},
+        labelLine : {show : false}
+      }
+    }    
+  }
+};
+</script>
+#+end_export
+# Ending (don't change)
+#+begin_export html
+<script>
+if (option && typeof option === 'object') {
+  myChart.setOption(option);
+}
+
+window.addEventListener('resize', myChart.resize);
+</script>
+#+end_export
