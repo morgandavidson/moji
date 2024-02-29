@@ -113,7 +113,7 @@ for (const i in data) {
 <script>
 option = {
   tooltip: {trigger: 'axis'},
-  grid: {top: '15%'},
+//  grid: {top: '15%'},
   legend: {
 //    type: 'scroll',
     selected: {
