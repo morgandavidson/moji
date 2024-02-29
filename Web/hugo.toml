@@ -204,6 +204,12 @@ defaultContentLanguage = "en"
       name = "Economy"
       weight = 3
     [[languages.en.menu.main]]
+      identifier = "gdpcomp"	  
+      parent = "economy"
+      name = "GDP Comparisons"
+      weight = 2
+      pageref = "/economy/gdpcomparisons"
+    [[languages.en.menu.main]]
       identifier = "Politics"	  
       name = "Politics"
       weight = 4
@@ -248,6 +254,12 @@ defaultContentLanguage = "en"
       identifier = "economy"	  
       name = "Économie"
       weight = 2
+    [[languages.fr.menu.main]]
+      identifier = "gdpcomp"	  
+      parent = "economy"
+      name = "Comparaisons entre PIB"
+      weight = 1
+      pageref = "/economy/gdpcomparisons"
     [[languages.fr.menu.main]]
       identifier = "Politics"	  
       name = "Politique"
