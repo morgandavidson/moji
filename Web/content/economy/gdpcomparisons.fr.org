@@ -1,16 +1,16 @@
-#+title:      GDP Comparisons
-#+date:       [2024-02-16 ven. 22:56]
+#+title:      Comparaisons PIB
+#+date:       [2024-02-16 ven. 22:58]
 #+filetags:   :content:dataviz:echarts:economy:hugo:poligraph:venture:
-#+identifier: 20240216T225611
+#+identifier: 20240216T225840
 #+options: timestamp:nil
-# #+EXPORT_FILE_NAME: ~/Git/moji/Web/content/economy/gdpcomparisons.org
+# #+EXPORT_FILE_NAME: ~/Git/moji/Web/content/economy/gdpcomparisons.fr.org
 
 # CDN libraries
 #+begin_export html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
 #+end_export
-* GDP PC   - Top 20 in 1950 vs Top 20 in 2022
-Gross Domestic Product (GDP) Per Capita (PC) in Purchasing Power Parity (PPP) figures come from [[https://ourworldindata.org/grapher/gdp-per-capita-penn-world-table][Our world in data]], [[https://www.imf.org/external/datamapper/PPPPC@WEO/VEN/USA][IMF]], [[https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG?view=chart][World Bank]], and Poligraph. Countries having less that 5 million inhabitants in 2022 have been excluded.
+* PIB PC - Top 20 en 1950 vs Top 20 en 2022
+Les chiffres du produit intérieur brut (PIB) Per Capita (PC) en parité de pouvoir d'achat (PPA) proviennent de [[https://ourworldindata.org/grapher/gdp-per-capita-penn-world-table][Our world in data]], du [[https://www.imf.org/external/datamapper/PPPPC@WEO/VEN/USA][FMI]], de  [[https://data.worldbank.org/indicator/NY.GDP .PCAP.KD.ZG?view=chart][Banque mondiale]], et de Poligraph. Les pays comptant moins de 5 millions d'habitants en 2022 ont été exclus.
 # CSS
 #+begin_export html
 <style>
