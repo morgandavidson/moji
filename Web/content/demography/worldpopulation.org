@@ -4,7 +4,6 @@
 #+identifier: 20240129T135533
 #+options: timestamp:nil
 # #+EXPORT_FILE_NAME: ~/Git/moji/Web/content/demography/worldpopulation.org
-
 All data and categories used in this page come from [[https://population.un.org/wpp/][UN site]].
 # CDN libraries & Global CSS
 #+begin_export html
@@ -243,8 +242,7 @@ for (let i = 0; i < data.length-1; i++) {s2da.push(
 <script>
 option = {
   dataset: {source: data},
-//  grid: {y: 150},
-    grid: {top: '20%'},
+  grid: {top: '10%'},
   legend: {
     selected: {
      'Africa (Eastern)': true,
@@ -337,10 +335,7 @@ option = {
   dataset: {
     source: data
   },
-  grid: {
-//    y: 130,
-    top: '10%',
-},
+  grid: {top: '10%'},
   legend: {
     selected: {
      'Africa (Eastern)': true,
