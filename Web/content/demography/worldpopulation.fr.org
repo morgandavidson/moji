@@ -73,7 +73,7 @@ for (let i = 0; i < data.length-1; i++) {s2da.push(
 option = {
   dataset: {source: data},
   tooltip: {trigger: 'axis'},
-  grid: {top: '5%'},
+  grid: {top: '10%'},
   visualMap: {
     type: 'piecewise',
     show: false,
