@@ -78,7 +78,7 @@ for (let i = 0; i < data.length-1; i++) {s2da.push(
 option = {
   dataset: {source: data},
   tooltip: {trigger: 'axis'},
-  grid: {top: '10%'},
+  grid: {top: '15%'},
   visualMap: {
     type: 'piecewise',
     show: false,
@@ -243,7 +243,7 @@ for (let i = 0; i < data.length-1; i++) {s2da.push(
 <script>
 option = {
   dataset: {source: data},
-  grid: {top: '15%'},
+  grid: {top: '25%'},
   legend: {
     selected: {
      'Africa (Eastern)': true,
@@ -334,7 +334,7 @@ var data = [["region_name", 1950.0, 1951.0, 1952.0, 1953.0, 1954.0, 1955.0, 1956
 <script>
 option = {
   dataset: {source: data},
-  grid: {top: '15%'},
+  grid: {top: '25%'},
   legend: {
     selected: {
      'Africa (Eastern)': true,
